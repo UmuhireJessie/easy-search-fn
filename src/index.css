@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,700&display=swap%22");
+
+
+:root{
+    --primaryfont: 'Montserrat', sans-serif;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--primaryfont);
+}
+
+@layer base {
+  h1 {
+    @apply text-[56px] ;
+  }
+  h2 {
+    @apply text-[48px] ;
+  }
+  h3 {
+    @apply text-[32px]  ;
+  }
+  h4 {
+    @apply text-[24px]  ;
+  }
+  h5 {
+    @apply text-[18px] ;
+  }
+  h6 {
+    @apply text-[16px] ;
+  }
+  p {
+    @apply text-[16px];
+  }
+}
+
+@layer components{
+
+
+
+.header__list{
+  @apply flex gap-4
+}
+
+.header__navigation{
+  @apply flex items-center justify-between px-24 py-5
+}
+
+/* .header__logo{
+  @apply text
+} */
+
+.header__buttons{
+  @apply flex gap-3
+}
+
+.header__signin{
+  @apply bg-blue-primary px-5 py-2 text-white font-bold rounded
+}
+
+.header__register{
+  @apply border border-blue-primary px-5 py-2 text-blue-primary font-bold rounded
+}
+
+
+.header__herosection{
+  @apply flex flex-col justify-center items-center gap-4 py-32
+
+}
+
+.header__title{
+  @apply text-blue-dark font-bold w-1/2 text-center
+}
+
+
+.header__slogan{
+  @apply text-paragraph-gray w-1/2 text-center opacity-[0.7]
+}
+
+.header__buttons--herosection{
+  @apply mt-5
+}
+
+.header__signin--fullyrounded, .header__register--fullyrounded{
+  @apply rounded-full px-8 py-3
+}
+
+
+
+
+}
